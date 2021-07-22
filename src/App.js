@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import {BsFillEnvelopeOpenFill} from 'react-icons/bs'
+import {BsFillPersonFill} from 'react-icons/bs'
+import {AiTwotonePhone} from 'react-icons/ai'
+
+import React, {useState} from 'react'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="section-user">
+        <div className="top-bar"></div>
+        <div className="bottom-bar">
+          <div className="user-info">
+            <img className="circle-image"/>
+            <span></span>
+            <span></span>
+            <div className="user-icons">
+              <BsFillEnvelopeOpenFill/>
+              <BsFillPersonFill/>
+              <AiTwotonePhone/>
+            </div>
+            <button className="btn">Random User</button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
